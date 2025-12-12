@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Страница объявления</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header container">
+      <!-- Навигационная панель -->
+      <div class="navbar">
+        <!-- Лого -->
+        <a href="/index.html" class="logo">
+          <img src="img/logo.svg" alt="logo Abito" class="logo-image" />
+        </a>
+        <!-- Навигация -->
+        <nav class="navbar-menu">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">Авто</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Недвижимость</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Работа</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Услуги</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Кнопки -->
+        <div class="button-group">
+          <a href="#" class="button button-link">Вход и регистрация</a>
+          <a href="#" class="button button-primary">Подать объявление</a>
+        </div>
+      </div>
+      <!-- Поиск -->
+      <div class="search-panel">
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Поиск по объявлениям"
+        />
+        <button class="search-button">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon"
+          >
+            <path
+              d="M14.6506 14.0012L10.0862 9.43675C10.9465 8.43352 11.4706 7.13293 11.4706 5.71058C11.4706 2.54822 8.89765 -0.0247192 5.7353 -0.0247192C4.20353 -0.0247192 2.76265 0.571751 1.67824 1.6544C0.595589 2.73793 -0.000881376 4.17881 9.77541e-07 5.71058C9.77541e-07 8.87293 2.57294 11.4459 5.7353 11.4459C7.15765 11.4459 8.45912 10.9218 9.46235 10.0615L14.0268 14.6259L14.6506 14.0012ZM5.7353 10.5635C3.06 10.5635 0.882354 8.38675 0.882354 5.71058C0.881472 4.41352 1.38618 3.19499 2.30294 2.2791C3.21882 1.36234 4.43824 0.857634 5.7353 0.857634C8.41059 0.857634 10.5882 3.0344 10.5882 5.71058C10.5882 8.38587 8.41059 10.5635 5.7353 10.5635Z"
+              fill="white"
+            />
+          </svg>
+
+          <span class="search-button-text">Найти</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="page-content container">
+      <!-- Блок с объявлениями -->
+      <main class="main main-single">
+        <div class="content">
+          <h2 class="page-title">Электросамокат kugoo Gx</h2>
+          <!-- Слайдер с фотографиями -->
+          <!-- Слайдер -->
+          <div
+            style="
+              --swiper-navigation-color: #fff;
+              --swiper-pagination-color: #fff;
+            "
+            class="swiper mySwiper2"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+            <!-- Стрелки -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="content-text">
+            <p>
+              Продаю не спеша самокат в хорошем состоянии.<br />Торг
+              возможен.<br />За период эксплуатации не выявлено ни одной
+              проблемы.<br />Из минусов — нужно прокачать задний тормоз.<br />Установлен
+              отсекатель сзади.<br />Покрышки CST внедорожные.<br />Все на
+              подшипниках, болты протянуты.<br />Пробег 881км , это немного для
+              такого зверя.
+            </p>
+          </div>
+        </div>
+        <!-- /.content -->
+        <div class="author">
+          <strong class="single-price">75 000 ₽</strong>
+          <div class="author-wrapper">
+            <div class="author-info">
+              <span class="author-name">Михаил Воробьев</span>
+              <div class="rating">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.97393 3.62139C9.90847 3.4189 9.72887 3.27508 9.51639 3.25593L6.63011 2.99385L5.4888 0.322503C5.40465 0.126728 5.21299 0 5.00005 0C4.78711 0 4.59545 0.126727 4.5113 0.322961L3.36999 2.99385L0.483257 3.25593C0.271154 3.27554 0.0920116 3.4189 0.0261682 3.62139C-0.0396751 3.82387 0.0211327 4.04597 0.181583 4.18597L2.36326 6.09932L1.71994 8.93318C1.67286 9.14155 1.75374 9.35693 1.92662 9.4819C2.01955 9.54904 2.12827 9.58322 2.23791 9.58322C2.33244 9.58322 2.42621 9.55774 2.51036 9.50739L5.00005 8.01939L7.48882 9.50739C7.67094 9.61695 7.90052 9.60695 8.07302 9.4819C8.24598 9.35655 8.32678 9.14109 8.27971 8.93318L7.63638 6.09932L9.81806 4.18636C9.97851 4.04597 10.0398 3.82426 9.97393 3.62139Z"
+                    fill="#FFC107"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.97393 3.62139C9.90847 3.4189 9.72887 3.27508 9.51639 3.25593L6.63011 2.99385L5.4888 0.322503C5.40465 0.126728 5.21299 0 5.00005 0C4.78711 0 4.59545 0.126727 4.5113 0.322961L3.36999 2.99385L0.483257 3.25593C0.271154 3.27554 0.0920116 3.4189 0.0261682 3.62139C-0.0396751 3.82387 0.0211327 4.04597 0.181583 4.18597L2.36326 6.09932L1.71994 8.93318C1.67286 9.14155 1.75374 9.35693 1.92662 9.4819C2.01955 9.54904 2.12827 9.58322 2.23791 9.58322C2.33244 9.58322 2.42621 9.55774 2.51036 9.50739L5.00005 8.01939L7.48882 9.50739C7.67094 9.61695 7.90052 9.60695 8.07302 9.4819C8.24598 9.35655 8.32678 9.14109 8.27971 8.93318L7.63638 6.09932L9.81806 4.18636C9.97851 4.04597 10.0398 3.82426 9.97393 3.62139Z"
+                    fill="#FFC107"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.97393 3.62139C9.90847 3.4189 9.72887 3.27508 9.51639 3.25593L6.63011 2.99385L5.4888 0.322503C5.40465 0.126728 5.21299 0 5.00005 0C4.78711 0 4.59545 0.126727 4.5113 0.322961L3.36999 2.99385L0.483257 3.25593C0.271154 3.27554 0.0920116 3.4189 0.0261682 3.62139C-0.0396751 3.82387 0.0211327 4.04597 0.181583 4.18597L2.36326 6.09932L1.71994 8.93318C1.67286 9.14155 1.75374 9.35693 1.92662 9.4819C2.01955 9.54904 2.12827 9.58322 2.23791 9.58322C2.33244 9.58322 2.42621 9.55774 2.51036 9.50739L5.00005 8.01939L7.48882 9.50739C7.67094 9.61695 7.90052 9.60695 8.07302 9.4819C8.24598 9.35655 8.32678 9.14109 8.27971 8.93318L7.63638 6.09932L9.81806 4.18636C9.97851 4.04597 10.0398 3.82426 9.97393 3.62139Z"
+                    fill="#FFC107"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.97393 3.62139C9.90847 3.4189 9.72887 3.27508 9.51639 3.25593L6.63011 2.99385L5.4888 0.322503C5.40465 0.126728 5.21299 0 5.00005 0C4.78711 0 4.59545 0.126727 4.5113 0.322961L3.36999 2.99385L0.483257 3.25593C0.271154 3.27554 0.0920116 3.4189 0.0261682 3.62139C-0.0396751 3.82387 0.0211327 4.04597 0.181583 4.18597L2.36326 6.09932L1.71994 8.93318C1.67286 9.14155 1.75374 9.35693 1.92662 9.4819C2.01955 9.54904 2.12827 9.58322 2.23791 9.58322C2.33244 9.58322 2.42621 9.55774 2.51036 9.50739L5.00005 8.01939L7.48882 9.50739C7.67094 9.61695 7.90052 9.60695 8.07302 9.4819C8.24598 9.35655 8.32678 9.14109 8.27971 8.93318L7.63638 6.09932L9.81806 4.18636C9.97851 4.04597 10.0398 3.82426 9.97393 3.62139Z"
+                    fill="#FFC107"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.97393 3.62139C9.90847 3.4189 9.72887 3.27508 9.51639 3.25593L6.63011 2.99385L5.4888 0.322503C5.40465 0.126728 5.21299 0 5.00005 0C4.78711 0 4.59545 0.126727 4.5113 0.322961L3.36999 2.99385L0.483257 3.25593C0.271154 3.27554 0.0920116 3.4189 0.0261682 3.62139C-0.0396751 3.82387 0.0211327 4.04597 0.181583 4.18597L2.36326 6.09932L1.71994 8.93318C1.67286 9.14155 1.75374 9.35693 1.92662 9.4819C2.01955 9.54904 2.12827 9.58322 2.23791 9.58322C2.33244 9.58322 2.42621 9.55774 2.51036 9.50739L5.00005 8.01939L7.48882 9.50739C7.67094 9.61695 7.90052 9.60695 8.07302 9.4819C8.24598 9.35655 8.32678 9.14109 8.27971 8.93318L7.63638 6.09932L9.81806 4.18636C9.97851 4.04597 10.0398 3.82426 9.97393 3.62139Z"
+                    fill="#FFC107"
+                  />
+                </svg>
+                <span class="rating-counter">5 отзывов</span>
+              </div>
+              <span class="author-status">Частное лицо</span>
+            </div>
+            <!-- /.author-info -->
+            <img src="img/avatar.jpg" alt="" class="author-avatar" />
+          </div>
+          <!-- /.author-wrapper -->
+          <div class="button-group">
+            <button class="button button-block button-primary">
+              Показать телефон
+            </button>
+            <button class="button button-block button-success">
+              Написать сообщение
+            </button>
+          </div>
+          <!-- /.button-group -->
+        </div>
+        <!-- /.author -->
+      </main>
+      <!-- сайдбар -->
+      <aside class="sidebar">
+        <a href="#">
+          <img src="img/banner.jpg" alt="" />
+        </a>
+        <a href="#">
+          <img src="img/banner 2.jpg" alt="" />
+        </a>
+        <hr color="#e5e5e5" />
+        <footer class="footer">
+          <p class="footer-text">© ООО «Абито», 2011–2021</p>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#" class="footer-text">Политика конфиденциальности</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#" class="footer-text">Обработка данных</a>
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a href="#" class="footer-link">Реклама на сайте</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#" class="footer-link">Вакансии</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#" class="footer-link">Помощь</a>
+            </li>
+          </ul>
+        </footer>
+      </aside>
+    </div>
+    <!-- /.page-content -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
