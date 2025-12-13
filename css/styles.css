@@ -22,6 +22,12 @@ body {
   margin-bottom: 24px;
 }
 
+.navbar-panel {
+  flex-grow: 1; /* растянуть по ширине */
+  display: flex; /* сделать гибким */
+  align-items: center; /* выровнять по середине */
+}
+
 .navbar-menu {
   margin-right: auto;
 }
@@ -94,7 +100,7 @@ body {
 .page-content {
   display: grid;
   grid-template-columns: 9fr 3fr;
-  grid-column-gap: 30px;
+  grid-column-gap: 10px;
 }
 
 .card-image {
@@ -111,10 +117,7 @@ body {
 
 .card {
   margin-bottom: 20px;
-}
-
-.card:not(:nth-child(3n)) {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .card-title {
@@ -132,10 +135,14 @@ body {
 }
 
 .like {
+  display: flex; 
+  align-items: center;
   background-color: white;
   border: none;
   cursor: pointer;
   margin-left: 15px;
+  margin-top: 12px;
+  margin-bottom: 5px;
 }
 
 .card-price {
@@ -346,4 +353,154 @@ body {
   background-color: #14b4be;
   border-radius: 5px;
   color: #fff;
+}
+
+.menu-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none; /* отключаем кнопку везде*/
+}
+
+.close-menu {
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+/* Медиа запросы */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .page-container {
+    display: block;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .page-content {
+    grid-template-columns: 8fr 4fr;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .navbar-panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9;
+    flex-direction: column; /* выстроить дочерние элементы в столбец */
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, opacity 0.2s;
+    transform: translateX(100%); /* уберём меню в сторону, его не будет видно */
+    opacity: 0;
+  }
+
+  .is-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .navbar-menu {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-single {
+    display: block;
+  }
+
+  .content {
+    max-width: 560px;
+    margin-right: 0; 
+  }
+
+  .sidebar a img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .page-content {
+    grid-template-columns: 12fr;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .card {
+    margin-right: 0;
+  }
+
+  .search-button-text {
+    display: none;
+  }
 }
